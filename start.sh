@@ -141,8 +141,8 @@ function generate_configs() {
     local uuid="$2"
     local id="$3"
     local cloudflared_address="$4"
-    local vless_node="vless://${id}@zula.ir:443?security=tls&sni=${cloudflared_address}&alpn=h2,http/1.1&fp=chrome&type=ws&path=/&host=${cloudflared_address}&encryption=none#[pl]%20[vl-tl-ws]%20[at-ar-no]"
-    local vless_xray="vless://${uuid}@zula.ir:443?security=tls&sni=${cloudflared_address}&alpn=h2,http/1.1&fp=chrome&type=ws&path=/ws?ed%3D2048&host=${cloudflared_address}&encryption=none#[pl]%20[vl-tl-ws]%20[at-ar]"
+    local vless_node="vless://${id}@zula.ir:443?security=tls&sni=${cloudflared_address}&alpn=h2,http/1.1&fp=chrome&type=ws&path=/&host=${cloudflared_address}&encryption=none#[🇵🇱]%20[vl-tl-ws]%20[at-ar-no]"
+    local vless_xray="vless://${uuid}@zula.ir:443?security=tls&sni=${cloudflared_address}&alpn=h2,http/1.1&fp=chrome&type=ws&path=/ws?ed%3D2048&host=${cloudflared_address}&encryption=none#[🇵🇱]%20[vl-tl-ws]%20[at-ar]"
 
     cat > $base_dir/settings << EOF
 PORT=$port
