@@ -16,7 +16,7 @@ devil binexec on
 ```
 ***AFTER THIS STEP, EXIT FROM SSH AND LOG IN AGAIN.***
 
-3. (Optional but recommended) Add TCP and UDP ports with the same port number in the panel.
+3. Add TCP and UDP ports with the same port number in the panel.
 - Log in to the admin panel.
 - Click on the `Port Reservation` tab on the left side.
 - Click `+ Add port`.
@@ -27,8 +27,6 @@ devil binexec on
 cd domains/<username>.serv00.net
 git clone https://github.com/wuqb2i4f/serv00-vless-ws.git
 cd serv00-vless-ws
-
-# This step is optional, but required if you did step 3
 echo "PORT=<port>" > settings
 ```
 
@@ -39,13 +37,12 @@ To use the script, run:
 ./start.sh <action> <sub-action>
 ```
 
-| Action | Sub-Action | Command | Description |
-| :---: | :---: | :---: | :---: |
-| setup | xray/node | `./start.sh setup xray` | Setup services in a single command |
-| check | xray/node | `./start.sh check xray` | Checks Cloudflared and other services |
-| show | xray/node/all | `./start.sh show xray` | Displays VLESS connection links from node/.env |
+| Action | Command            | Description                                   |
+| :---:  | :---:              | :---:                                         |
+| setup  | `./start.sh setup` | Setup services in a single command            |
+| check  | `./start.sh check` | Checks Cloudflared and other services         |
+| show   | `./start.sh show`  | Displays VLESS connection links from settings |
 
-***NODE.JS AND XRAY CANNOT BE ACTIVE SIMULTANEOUSLY. ONLY ONE OF THEM SHOULD BE RUNNING AT A TIME.***
 
 ## Checking Sessions
 
@@ -55,7 +52,6 @@ tmux attach -t <session>
 ```
 Replace `<session>` with:
 - `cf` for Cloudflared
-- `node` for Node.js
 - `xray` for Xray
 
 For example, to check the Cloudflared session:
@@ -77,6 +73,5 @@ https://<username>.serv00.net/sub.txt
 ## Notes
 
 - The script uses tmux to manage sessions for each component.
-- Cron jobs are set up for periodic maintenance of Node.js and Xray.
-- Cloudflared, Node.js, and Xray configurations are generated automatically.
-- The script includes functions for port management and cleanup.
+- Cron jobs are set up for periodic maintenance of Xray.
+- Cloudflared, Xray configurations are generated automatically.

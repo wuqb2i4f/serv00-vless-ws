@@ -131,6 +131,5 @@ dist
 
 # Custom
 cloudflared
-package-lock.json
 xray
 settings
