@@ -1,0 +1,18 @@
+{
+  "name": "proxy-nodejs-ws",
+  "version": "1.0.0",
+  "description": "Deploy vless nodes on Serv00 free hosting website",
+  "main": "index.js",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "ws": "latest"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
