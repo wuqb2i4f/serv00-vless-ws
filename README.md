@@ -65,9 +65,10 @@ Ctrl + b, then d
 This key combination allows you to exit the session while leaving it running in the background.
 
 ## Accessing Sub-Link
-To access the sub-link with your username, visit:
+To access the sub-link and fragment with your username, visit:
 ```
 https://<username>.serv00.net/sub.txt
+https://<username>.serv00.net/fragment.json
 ```
 
 ## Notes
