@@ -99,7 +99,7 @@ function generate_configs() {
     local uuid="$2"
     local id="$3"
     local cloudflared_address="$4"
-    local vless="vless://${uuid}@try.tp-link.com:443?security=tls&sni=${cloudflared_address}&alpn=h2,http/1.1&fp=chrome&type=ws&path=/ws?ed%3D2048&host=${cloudflared_address}&encryption=none#[🇵🇱]%20[vl-tl-ws]%20[at-ar]"
+    local vless="vless://${uuid}@zula.ir:443?security=tls&sni=${cloudflared_address}&alpn=h2,http/1.1&fp=chrome&type=ws&path=/ws?ed%3D2048&host=${cloudflared_address}&encryption=none#[🇵🇱]%20[vl-tl-ws]%20[at-ar]"
 
     cat >$base_dir/settings <<EOF
 PORT=$port
@@ -243,7 +243,7 @@ EOF
       "port": 10853,
       "protocol": "dokodemo-door",
       "settings": {
-        "address": "try.tp-link.com",
+        "address": "zula.ir",
         "network": "tcp,udp",
         "port": 53
       },
@@ -266,7 +266,7 @@ EOF
       "settings": {
         "vnext": [
           {
-            "address": "try.tp-link.com",
+            "address": "zula.ir",
             "port": 443,
             "users": [
               {
